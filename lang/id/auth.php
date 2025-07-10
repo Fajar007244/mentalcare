@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'failed' => 'Kredensial ini tidak cocok dengan catatan kami.',
+    'password' => 'Kata sandi yang diberikan salah.',
+    'throttle' => 'Terlalu banyak upaya masuk. Silakan coba lagi dalam :seconds detik.',
+    'Welcome to MentalCare' => 'Selamat Datang di MentalCare',
+    'Please sign in to continue.' => 'Silakan masuk untuk melanjutkan.',
+    'Register MentalCare Account' => 'Daftar Akun MentalCare',
+    'Create a new account to access our services.' => 'Buat akun baru untuk mengakses layanan kami.',
+    'Register As' => 'Daftar Sebagai',
+    'User' => 'Pengguna',
+    'Psychologist' => 'Psikolog',
+    'Log in' => 'Masuk',
+    'Register' => 'Daftar',
+    'Name' => 'Nama',
+    'Email' => 'Email',
+    'Password' => 'Kata Sandi',
+    'Confirm Password' => 'Konfirmasi Kata Sandi',
+    'Remember me' => 'Ingat saya',
+    'Forgot your password?' => 'Lupa kata sandi Anda?',
+    'Already registered?' => 'Sudah terdaftar?',
+    'I agree to the :terms_of_service and :privacy_policy' => 'Saya menyetujui :terms_of_service dan :privacy_policy',
+    'Terms of Service' => 'Ketentuan Layanan',
+    'Privacy Policy' => 'Kebijakan Privasi',
+];
