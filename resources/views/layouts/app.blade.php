@@ -42,6 +42,14 @@
 
             <!-- Page Content -->
             <main>
+                @if (session('warning'))
+                    <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                        <div class="bg-yellow-100 border border-yellow-400 text-yellow-700 px-4 py-3 rounded relative" role="alert">
+                            <strong class="font-bold">Perhatian!</strong>
+                            <span class="block sm:inline">{{ session('warning') }}</span>
+                        </div>
+                    </div>
+                @endif
                 {{ $slot }}
             </main>
         </div>
