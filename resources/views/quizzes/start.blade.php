@@ -28,7 +28,7 @@
                                                        value="{{ $option['score'] }}" 
                                                        class="focus:ring-blue-500 h-4 w-4 text-blue-600 border-gray-300" 
                                                        required>
-                                                <span class="ml-4 text-sm font-medium text-gray-700">{{ $option['text'] }}</span>
+                                                    <span class="ml-4 text-sm font-medium text-gray-700">{{ $option['text'] }}</span>
                                             </label>
                                         @endforeach
                                     </div>

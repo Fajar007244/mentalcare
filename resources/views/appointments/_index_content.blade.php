@@ -1,7 +1,7 @@
 <div class="flex justify-between items-center mb-6">
     <h3 class="text-2xl font-bold text-gray-900">Daftar Janji Temu</h3>
     @if(Auth::user()->isUser())
-        <a href="{{ route('appointments.create') }}" class="inline-flex items-center px-4 py-2 bg-blue-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-blue-500 active:bg-blue-700 focus:outline-none focus:border-blue-700 focus:ring ring-blue-300 disabled:opacity-25 transition ease-in-out duration-150">
+        <a href="{{ route('appointments.create') }}" class="inline-flex items-center px-4 py-2 bg-primary-500 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-primary-700 active:bg-primary-900 focus:outline-none focus:border-primary-700 focus:ring ring-primary-300 disabled:opacity-25 transition ease-in-out duration-150">
             Buat Janji Temu Baru
         </a>
     @endif

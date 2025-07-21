@@ -13,6 +13,11 @@ class Question extends Model
         'quiz_id',
         'question_text',
         'order',
+        'options',
+    ];
+
+    protected $casts = [
+        'options' => 'array',
     ];
 
     public function quiz()

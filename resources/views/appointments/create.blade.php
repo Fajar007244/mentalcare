@@ -15,7 +15,7 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-end">
                         <div>
                             <label for="psychologist_id" class="block font-medium text-sm text-gray-700">Pilih Psikolog</label>
-                            <select name="psychologist_id" id="psychologist_id" class="block mt-1 w-full rounded-md shadow-sm border-gray-300 focus:border-blue-300 focus:ring focus:ring-blue-200 focus:ring-opacity-50">
+                            <select name="psychologist_id" id="psychologist_id" class="block mt-1 w-full rounded-md shadow-sm border-gray-300 focus:border-primary-300 focus:ring focus:ring-primary-200 focus:ring-opacity-50">
                                 <option value="">Semua Psikolog</option>
                                 @foreach ($psychologists as $psychologist)
                                     <option value="{{ $psychologist->id }}" {{ request('psychologist_id') == $psychologist->id ? 'selected' : '' }}>
@@ -25,7 +25,7 @@
                             </select>
                         </div>
                         <div>
-                            <button type="submit" class="inline-flex items-center px-4 py-2 bg-blue-600 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-blue-500 active:bg-blue-700 focus:outline-none focus:border-blue-700 focus:ring ring-blue-300 disabled:opacity-25 transition ease-in-out duration-150">
+                            <button type="submit" class="inline-flex items-center px-4 py-2 bg-primary-500 border border-transparent rounded-md font-semibold text-xs text-white uppercase tracking-widest hover:bg-primary-700 active:bg-primary-900 focus:outline-none focus:border-primary-700 focus:ring ring-primary-300 disabled:opacity-25 transition ease-in-out duration-150">
                                 Filter Jadwal
                             </button>
                         </div>
@@ -45,7 +45,7 @@
                         </div>
                     </div>
                     <div class="flex items-center justify-end">
-                        <button type="submit" class="inline-flex items-center px-6 py-3 bg-green-600 border border-transparent rounded-md font-semibold text-sm text-white uppercase tracking-widest hover:bg-green-500 active:bg-green-700 focus:outline-none focus:border-green-700 focus:ring ring-green-300 disabled:opacity-25 transition ease-in-out duration-150">
+                        <button type="submit" class="inline-flex items-center px-6 py-3 bg-secondary-500 border border-transparent rounded-md font-semibold text-sm text-white uppercase tracking-widest hover:bg-secondary-700 active:bg-secondary-900 focus:outline-none focus:border-secondary-700 focus:ring ring-secondary-300 disabled:opacity-25 transition ease-in-out duration-150">
                             Konfirmasi Janji Temu
                         </button>
                     </div>
@@ -84,7 +84,7 @@
                                     is_booked: {{ $schedule->is_booked ? 'true' : 'false' }}
                                 },
                                 className: 'cursor-pointer',
-                                color: '{{ $schedule->is_booked ? '#ef4444' : '#22c55e' }}' // Red for booked, green for available
+                                color: '{{ $schedule->is_booked ? '#ef4444' : '#4caf50' }}' // Red for booked, green for available
                             },
                         @endforeach
                     ],
@@ -96,7 +96,7 @@
                                 <div class="p-4 bg-gray-50 rounded-lg border border-gray-200">
                                     <p><span class="font-semibold">Psikolog:</span> ${info.event.extendedProps.psychologist}</p>
                                     <p><span class="font-semibold">Waktu:</span> ${new Date(info.event.start).toLocaleString('id-ID', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' })} - ${new Date(info.event.end).toLocaleTimeString('id-ID', { hour: '2-digit', minute: '2-digit' })} WIB</p>
-                                    <p class="mt-2 text-lg font-bold text-blue-600"><span class="font-semibold">Harga:</span> ${info.event.extendedProps.price}</p>
+                                    <p class="mt-2 text-lg font-bold text-primary-600"><span class="font-semibold">Harga:</span> ${info.event.extendedProps.price}</p>
                                 </div>
                             `;
                             document.getElementById('appointmentForm').style.display = 'block';
